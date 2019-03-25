@@ -1,4 +1,4 @@
-#include"string.h"
+#include<string>
 #include<iostream>
 using namespace std;
 
@@ -12,7 +12,7 @@ public:
 	Date(int,int,int);
 	friend ostream &operator<<(ostream & output,const Date&);
 	friend istream &operator>>(istream & input, Date&);
-    bool operator==(const Date&);
+	bool operator==(const Date&);
 	int operator+(int );
 	void operator=(int);
 	Date&  operator--();
