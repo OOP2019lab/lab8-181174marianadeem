@@ -99,7 +99,7 @@ Date Date::operator--(int a)//pre decrement
 	return temp;
 }
 
-int &Date::operator[](int i)//subscript operator
+int& Date::operator[](int i)//subscript operator
 {
 	if(i==0)
 	{
@@ -116,8 +116,9 @@ int &Date::operator[](int i)//subscript operator
 	else
 	{
 		cout<<"enter valid entry"<<endl;
+		return day;
 	}
-	return day;
+	
 }
 Date::~Date()//destructor
 {
